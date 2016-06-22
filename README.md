@@ -1,4 +1,4 @@
-<b>Tachi Web v2.0.0 {Alfa}</b>
+<b>Tachi Web v2.0.0 {ALPHA}</b>
 
 This is the latest base version of the Tantra Online Web System developed and maintained by Amir Torrez
 
