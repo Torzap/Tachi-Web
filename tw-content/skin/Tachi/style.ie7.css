@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document
+ * Tachi Web 1.2.1 - Skin: Tachi
+ * John Am Torres - johnamtorres@gmail.com
+ * http://tachihost.in
+*/ 
+
+img
+{
+  filter: expression(artFixPNG(this));
+}/* end Page */
+
+/* begin Box, Sheet */
+.tw-sheet-tl
+{
+  clip: rect(auto 46px 46px auto);
+}
+
+.tw-sheet-tr
+{
+  clip: rect(auto auto 46px 46px);
+}
+
+.tw-sheet-bl
+{
+  clip: rect(46px 46px auto auto);
+}
+
+.tw-sheet-br
+{
+  clip: rect(46px auto auto 46px);
+}
+
+.tw-sheet-tc
+{
+  clip: rect(auto auto 46px auto);
+}
+
+.tw-sheet-bc
+{
+  clip: rect(46px auto auto auto);
+}
+
+.tw-sheet-cr
+{
+  clip: rect(auto auto auto 46px);
+}
+
+.tw-sheet-cl
+{
+  clip: rect(auto 46px auto auto);
+}
+
+.tw-sheet-body
+{
+  zoom: 1;
+}
+/* end Box, Sheet */
+
+/* begin Menu */
+.tw-nav-r
+{
+  clip: rect(auto auto auto 771px);
+}
+
+/* end Menu */
+
+/* begin MenuItem */
+.tw-hmenu a .r
+{
+  clip: rect(auto auto auto 404px);
+}
+/* end MenuItem */
+
+/* begin Layout */
+.tw-content-layout, .tw-content-layout-row {display: block;}
+.tw-content-layout, .tw-content-layout-row {zoom: 1;}
+/* end Layout */
+
+/* begin Box, Block */
+.tw-block-tl
+{
+  clip: rect(auto 7px 7px auto);
+}
+
+.tw-block-tr
+{
+  clip: rect(auto auto 7px 7px);
+}
+
+.tw-block-bl
+{
+  clip: rect(7px 7px auto auto);
+}
+
+.tw-block-br
+{
+  clip: rect(7px auto auto 7px);
+}
+
+.tw-block-tc
+{
+  clip: rect(auto auto 7px auto);
+}
+
+.tw-block-bc
+{
+  clip: rect(7px auto auto auto);
+}
+
+.tw-block-cr
+{
+  clip: rect(auto auto auto 7px);
+}
+
+.tw-block-cl
+{
+  clip: rect(auto 7px auto auto);
+}
+
+.tw-block-body
+{
+  zoom: 1;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.tw-blockheader .r
+{
+  clip: rect(auto auto auto 767px);
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+
+.tw-blockcontent-body
+{
+  zoom: 1;
+}
+/* end Box, BlockContent */
+
+/* begin Button */
+.tw-button-wrapper .tw-button-r
+{
+  clip: rect(auto auto auto 399px);
+}
+/* end Button */
+
+/* begin Box, Post */
+
+.tw-post-body
+{
+  zoom: 1;
+}
+/* end Box, Post */
+
+/* begin PostContent */
+.tw-postcontent
+{
+  height: 1%;
+}
+/* end PostContent */
+
+/* begin Footer */
+.tw-footer-body
+{
+    padding-right: 0;
+  zoom:1;
+}
+
+.tw-footer{
+  zoom:1;
+}
+
+.tw-footer-r
+{
+  clip: rect(auto auto auto 3px);
+}
+
+/* end Footer */
+
+/* begin LayoutCell, content */
+.tw-content {width: auto;}
+.tw-content-layout .tw-layout-cell, .tw-content-layout .tw-layout-cell .tw-content-layout .tw-layout-cell
+{
+  display: block;
+  position:relative;
+  float: left;
+  clear: right;
+}
+.tw-content-layout .tw-layout-cell, .tw-content-layout .tw-layout-cell .tw-content-layout .tw-layout-cell {  zoom:1; }
+.tw-layout-cell .tw-layout-cell{ float: none; clear: both;}
+/* end LayoutCell, content */
+

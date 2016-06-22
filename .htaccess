@@ -1,0 +1,63 @@
+## Definir pagina principal
+RewriteBase /
+DirectoryIndex index.php
+## Evitar ver listado de archivos
+Options All -Indexes
+IndexIgnore *
+## Errores apache
+ErrorDocument 400 "<h1>Mal pedido</h1>"
+ErrorDocument 401 "<h1>Requiere autorizaci&oacute;n</h1>"
+ErrorDocument 402 "<h1>Requiere pago</h1>"
+ErrorDocument 403 "<h1>Acceso denegado</h1>"
+ErrorDocument 404 "<h1>Archivo o p&aacute;gina no encontrado</h1>"
+ErrorDocument 405 "<h1>M&eacute;todo no permitido</h1>"
+ErrorDocument 406 "<h1>Encodificaci&oacute;n no aceptable</h1>"
+ErrorDocument 407 "<h1>Requiere autorizaci&oacute;n del proxy</h1>"
+ErrorDocument 408 "<h1>Tiempo excedido del pedido</h1>"
+ErrorDocument 409 "<h1>Pedido conflictivo</h1>"
+ErrorDocument 410 "<h1>Desaparecido</h1>"
+ErrorDocument 411 "<h1>Requiere el tama&ntilde;o del contenido</h1>"
+ErrorDocument 412 "<h1>Fallo la precondici&oacute;n</h1>"
+ErrorDocument 413 "<h1>Entidad solicitada demasiado grande</h1>"
+ErrorDocument 414 "<h1>El URL solicitado es demasiado largo</h1>"
+ErrorDocument 415 "<h1>Tipo de media no soportado</h1>"
+ErrorDocument 500 "<h1>Error Interno del Servidor</h1>"
+ErrorDocument 501 "<h1>No implementado</h1>"
+ErrorDocument 502 "<h1>Mala pasarela (gateway)</h1>"
+ErrorDocument 503 "<h1>Servicio no disponible</h1>"
+ErrorDocument 504 "<h1>Tiempo excedido de la pasarela (gateway)</h1>"
+ErrorDocument 505 "<h1>Versi&oacute;n de HTTP no soportada</h1>"
+## PHP
+php_value date.timezone America/Mexico_City
+php_value display_errors Off
+## Fast load
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/x-javascript
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4.0[678] no-gzip
+BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+## Administrador
+ServerSignature EMail
+SetEnv SERVER_ADMIN johnamtorres@gmail.com
+## DDOS
+LimitRequestBody 10240000
+RewriteCond %{QUERY_STRING} (;|<|>|’|”|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|cast|set|declare|drop|update|md5|benchmark) [NC,OR]
+RewriteCond %{QUERY_STRING} \.\./\.\. [OR]
+RewriteCond %{QUERY_STRING} (localhost|loopback|127\.0\.0\.1) [NC,OR]
+RewriteCond %{QUERY_STRING} \.[a-z0-9] [NC,OR]
+RewriteCond %{QUERY_STRING} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC]
+RewriteRule .* - [F]
+<FilesMatch "^\.(ht)|(\.*~)$">
+order Deny,Allow
+Deny from all
+</FilesMatch>
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]  
+RewriteCond %{HTTP_USER_AGENT} ^(-|\.|') [OR]  
+RewriteCond %{HTTP_USER_AGENT} ^(.*)(<|>|%3C|%3E)(.*) [NC,OR]  
+RewriteCond %{HTTP_USER_AGENT} ^(java|curl|wget)(.*) [NC,OR]  
+RewriteCond %{HTTP_USER_AGENT} ^(.*)(libwww-perl|libwwwperl|snoopy|curl|wget|winhttp|python|nikto|scan|clshttp|archiver|loader|email|harvest|fetch|extract|grab|miner|suck|reaper|leach)(.*) [NC,OR]  
+RewriteCond %{REQUEST_URI} ^(/,|/;|/<|/>|/'|/`|/%2C|/%3C|/%3E|/%27|/////) [NC,OR]  
+RewriteCond %{HTTP_REFERER} ^(.*)(%00|%08|%09|%0A|%0B|%0C|%0D|%0E|%0F|%2C|<|>|'|%3C|%3E|%26%23|%27|%60)(.*) [NC,OR]  
+RewriteCond %{QUERY_STRING} ^(.*)(%00|%08|%09|%0A|%0B|%0C|%0D|%0E|%0F|%2C|%3C|%3E|%27|%26%23|%60)(.*) [NC,OR]  
+RewriteCond %{QUERY_STRING} ^(.*)('|-|<|>|,|/|\\|\.a|\.c|\.t|\.d|\.p|\.i|\.e|\.j)(.*) [NC,OR]  
+RewriteCond %{HTTP_COOKIE} ^(.*)(<|>|'|%3C|%3E|%27)(.*) [NC]  
+RewriteRule ^(.*)$ error.php [NC]   

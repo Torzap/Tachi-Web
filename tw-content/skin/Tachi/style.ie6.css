@@ -1,0 +1,547 @@
+@charset "utf-8";
+/* CSS Document
+ * Tachi Web 1.2.1 - Skin: Tachi
+ * John Am Torres - johnamtorres@gmail.com
+ * http://tachihost.in
+*/
+
+body 
+{
+  background-attachment: scroll;   
+}
+
+#tw-page-background-middle-texture
+{
+   height: expression(document.documentElement.clientHeight + 'px');
+  width: expression(document.body.clientWidth>800?"100%":"800px");
+}
+
+img
+{
+  filter: expression(artFixPNG(this));
+}
+
+.cleared 
+{
+    width:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.tw-sheet, .tw-sheet-body
+{
+  zoom: 1;
+}
+
+.tw-sheet-tr, .tw-sheet-tl, .tw-sheet-br, .tw-sheet-bl, .tw-sheet-tc, .tw-sheet-bc,.tw-sheet-cr, .tw-sheet-cl
+{
+  font-size: 1px;
+  background: none;
+}
+
+.tw-sheet-tr, .tw-sheet-tl, .tw-sheet-br, .tw-sheet-bl
+{
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/sheet_s.png',sizingMethod='scale')");
+}
+
+.tw-sheet-tl
+{
+  clip: rect(auto 46px 46px auto);
+}
+
+.tw-sheet-tr
+{
+  left:expression(this.parentNode.offsetWidth-92+'px');
+  clip: rect(auto auto 46px 46px);
+}
+
+.tw-sheet-bl
+{
+  top: expression(this.parentNode.offsetHeight-92+'px');
+  clip: rect(46px 46px auto auto);
+}
+
+.tw-sheet-br
+{
+  top: expression(this.parentNode.offsetHeight-92+'px');
+  left:expression(this.parentNode.offsetWidth-92+'px');
+  clip: rect(46px auto auto 46px);
+}
+
+.tw-sheet-tc, .tw-sheet-bc
+{
+  width: expression(this.parentNode.offsetWidth-92+'px');
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/sheet_h.png',sizingMethod='scale')");
+}
+
+.tw-sheet-tc
+{
+  clip: rect(auto auto 46px auto);
+}
+
+.tw-sheet-bc
+{
+  top: expression(this.parentNode.offsetHeight-92+'px');
+  clip: rect(46px auto auto auto);
+}
+
+.tw-sheet-cr, .tw-sheet-cl
+{
+  height: expression(this.parentNode.offsetHeight-92+'px');
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/sheet_v.png',sizingMethod='scale')");
+}
+
+.tw-sheet-cr
+{
+  left:expression(this.parentNode.offsetWidth-92+'px');
+  clip: rect(auto auto auto 46px);
+}
+
+.tw-sheet-cl
+{
+  clip: rect(auto 46px auto auto);
+}
+
+.tw-sheet-cc
+{
+  font-size: 1px;
+  width: expression(this.parentNode.offsetWidth-92+'px');
+  height: expression(this.parentNode.offsetHeight-92+'px');
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/sheet_c.png',sizingMethod='scale')");
+}
+#tw-page-background-top-texture{
+  width: expression(document.body.clientWidth>800?"100%":"800px");
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.tw-header-png
+{
+  font-size: 1px;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/header.png',sizingMethod='crop')");
+}
+
+/* end Header */
+
+/* begin HeaderObject */
+div.tw-headerobject
+{
+  font-size: 1px;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/header-object.png',sizingMethod='scale')");
+}
+/* end HeaderObject */
+
+/* begin Menu */
+.tw-hmenu ul
+{
+  width: 1px;
+  height: 1%;
+}
+
+.tw-hmenu li.tw-hmenuhover
+{
+  z-index: 10000;
+}
+
+.tw-hmenu .tw-hmenuhoverUL
+{
+  visibility: visible;
+  top: 100%;
+  left: 0;
+}
+
+.tw-hmenu .tw-hmenuhoverUL .tw-hmenuhoverUL
+{
+  top: 0;
+  left: 100%;
+}
+
+.tw-hmenu, .tw-hmenu ul a
+{
+  height: 1%;
+}
+
+.tw-hmenu li li
+{
+  float: left;
+  width: 100%;
+}
+
+.tw-nav
+{
+  zoom: 1;
+  height: 38px;
+}
+
+.tw-nav-l, .tw-nav-r
+{
+  font-size: 1px;
+  height: 38px;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/nav.png',sizingMethod='crop')");
+}
+
+.tw-nav-l
+{
+  width: expression(this.parentNode.offsetWidth-3+'px');
+}
+
+.tw-nav-r
+{
+  left: expression(this.parentNode.offsetWidth-774+'px');
+  clip: rect(auto auto auto 771px);
+}
+
+/* end Menu */
+
+/* begin MenuItem */
+.tw-hmenu a
+{
+  display:inline-block;
+}
+
+.tw-hmenu a:hover, .tw-hmenuhoverA {
+	visibility:visible;
+}
+
+.tw-hmenu a .r, .tw-hmenu a .l
+{
+  font-size: 1px;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/menuitem.png',sizingMethod='crop')");
+}
+
+.tw-hmenu a .r
+{
+  left:100%;
+  margin-left:-408px;
+  clip: rect(auto auto auto 404px);
+}
+
+.tw-hmenu a .l
+{
+  width: expression(this.parentNode.offsetWidth-4+'px');
+}
+
+.tw-hmenuhover .tw-hmenuhoverA .t
+{
+  color: #D5E2E7;
+}
+
+.tw-hmenuhover .tw-hmenuhoverA .l, .tw-hmenuhover .tw-hmenuhoverA .r
+{
+  top: -26px;
+}
+/* end MenuItem */
+
+/* begin MenuSeparator */
+.tw-nav .tw-hmenu-separator
+{
+  font-size: 1px;
+  zoom: 1;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/menuseparator.png',sizingMethod='crop')");
+}
+
+/* end MenuSeparator */
+
+/* begin MenuSubItem */
+.tw-hmenu ul a
+{
+  color: #1B2227 !important;
+}
+
+.tw-hmenu ul a:hover {
+  color: #000000 !important;
+}	
+
+.tw-hmenu ul .tw-hmenuhover .tw-hmenuhoverA
+{
+  color: #000000 !important;
+  border-color: #439CB6;
+  background-position: 0 -26px;
+}
+
+.tw-nav .tw-hmenu ul a:hover span, .tw-nav .tw-hmenu ul a:hover span span
+{
+  color: #000000 !important;
+}	
+
+.tw-nav .tw-hmenu ul .tw-hmenuhover .tw-hmenuhoverA span, .tw-nav .tw-hmenu ul .tw-hmenuhover .tw-hmenuhoverA span span
+{
+  color: #000000 !important;
+}
+
+/* end MenuSubItem */
+
+/* begin Layout */
+.tw-content-layout, .tw-content-layout-row {display: block;}
+.tw-content-layout, .tw-content-layout-row {zoom: 1;}
+/* end Layout */
+
+/* begin Box, Block */
+.tw-block, .tw-block-body
+{
+  zoom: 1;
+}
+
+.tw-block-tr, .tw-block-tl, .tw-block-br, .tw-block-bl, .tw-block-tc, .tw-block-bc,.tw-block-cr, .tw-block-cl
+{
+  font-size: 1px;
+  background: none;
+}
+
+.tw-block-tr, .tw-block-tl, .tw-block-br, .tw-block-bl
+{
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/block_s.png',sizingMethod='scale')");
+}
+
+.tw-block-tl
+{
+  clip: rect(auto 7px 7px auto);
+}
+
+.tw-block-tr
+{
+  left:expression(this.parentNode.offsetWidth-14+'px');
+  clip: rect(auto auto 7px 7px);
+}
+
+.tw-block-bl
+{
+  top: expression(this.parentNode.offsetHeight-14+'px');
+  clip: rect(7px 7px auto auto);
+}
+
+.tw-block-br
+{
+  top: expression(this.parentNode.offsetHeight-14+'px');
+  left:expression(this.parentNode.offsetWidth-14+'px');
+  clip: rect(7px auto auto 7px);
+}
+
+.tw-block-tc, .tw-block-bc
+{
+  width: expression(this.parentNode.offsetWidth-14+'px');
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/block_h.png',sizingMethod='scale')");
+}
+
+.tw-block-tc
+{
+  clip: rect(auto auto 7px auto);
+}
+
+.tw-block-bc
+{
+  top: expression(this.parentNode.offsetHeight-14+'px');
+  clip: rect(7px auto auto auto);
+}
+
+.tw-block-cr, .tw-block-cl
+{
+  height: expression(this.parentNode.offsetHeight-14+'px');
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/block_v.png',sizingMethod='scale')");
+}
+
+.tw-block-cr
+{
+  left:expression(this.parentNode.offsetWidth-14+'px');
+  clip: rect(auto auto auto 7px);
+}
+
+.tw-block-cl
+{
+  clip: rect(auto 7px auto auto);
+}
+
+.tw-block-cc
+{
+  font-size: 1px;
+  width: expression(this.parentNode.offsetWidth-14+'px');
+  height: expression(this.parentNode.offsetHeight-14+'px');
+  background-color: #304B54;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.tw-blockheader
+{
+  zoom: 1;
+}
+
+.tw-blockheader .l, .tw-blockheader .r
+{
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/blockheader.png',sizingMethod='crop')");
+}
+
+.tw-blockheader .r
+{
+  left:expression(this.parentNode.offsetWidth-774+'px');
+  clip: rect(auto auto auto 767px);
+}
+
+.tw-blockheader .l
+{
+  width: expression(this.parentNode.offsetWidth-7+'px');
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.tw-blockcontent, .tw-blockcontent-body
+{
+  zoom: 1;
+}
+.tw-blockcontent-body ul li
+{
+  height: 1%;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/blockcontentbullets.png',sizingMethod='crop')");
+}
+
+/* end Box, BlockContent */
+
+/* begin Button */
+.tw-button-wrapper, .tw-button-wrapper .tw-button-l, .tw-button-wrapper .tw-button-r
+{
+  zoom: 1;
+}
+
+.tw-button-wrapper .tw-button
+{
+  float: left;
+}
+
+.tw-button-wrapper .tw-button-l, .tw-button-wrapper .tw-button-r
+{
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/button.png',sizingMethod='crop')");
+}
+
+.tw-button-wrapper .tw-button-r
+{
+  left:expression(this.parentNode.offsetWidth-409+'px');
+  clip: rect(auto auto auto 399px);
+}
+
+.tw-button-wrapper .tw-button-l
+{
+  width: expression(this.parentNode.offsetWidth-10+'px');
+}
+/* end Button */
+
+/* begin Box, Post */
+.tw-post, .tw-post-body
+{
+  zoom: 1;
+}
+/* end Box, Post */
+
+/* begin PostMetadata, PostMetadataHeader */
+.tw-postmetadataheader
+{
+    zoom:1;
+        background: none;
+    behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/postmetadataheader_bg.png',sizingMethod='scale')");
+    }
+
+/* end PostMetadata, PostMetadataHeader */
+
+/* begin PostBullets */
+.tw-post ul li, .tw-post ol ul li
+{
+  height: 1%;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/postbullets.png',sizingMethod='crop')");
+  padding-left: 13px;
+  /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.tw-post ul ol li
+{
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="");
+  padding-left: 0;
+  /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+/* end PostBullets */
+
+/* begin PostQuote */
+.tw-postcontent blockquote
+{
+  height: 1%;
+  background-image: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/postquote.png',sizingMethod='crop')");
+}
+/* end PostQuote */
+
+/* begin Footer */
+.tw-footer-body
+{
+    padding-right: 0;
+  zoom:1;
+}
+
+.tw-footer{
+  zoom:1;
+}
+
+.tw-footer-b 
+{
+  top: expression(this.parentNode.offsetHeight-3+'px');
+  width: expression(this.parentNode.offsetWidth-6+'px');
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/footer_b.png',sizingMethod='crop')");
+  zoom: 1;
+  font-size: 1px;
+}
+
+.tw-footer-r, .tw-footer-l
+{
+  top: expression(this.parentNode.offsetHeight-3+'px');
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/footer_s.png',sizingMethod='crop')");
+  zoom: 1;
+  font-size: 1px;
+}
+
+.tw-footer-r
+{
+  left: expression(this.parentNode.offsetWidth-6+'px');
+  clip: rect(auto auto auto 3px);
+}
+
+.tw-footer-t
+{
+  zoom: 1;
+  font-size: 1px;
+  top: expression(this.parentNode.offsetHeight-515+'px');
+  height:512px;
+  width: 100%;
+  background: none;
+  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/footer_t.png',sizingMethod='crop')");
+}
+
+/* end Footer */
+
+/* begin LayoutCell, content */
+
+.tw-content {width: auto;}
+.tw-content-layout .tw-layout-cell, .tw-content-layout .tw-layout-cell .tw-content-layout .tw-layout-cell
+{
+  display: block;
+  position:relative;
+  float: left;
+  clear: right;
+}
+.tw-content-layout .tw-layout-cell, .tw-content-layout .tw-layout-cell .tw-content-layout .tw-layout-cell {zoom:1;}
+
+/* end LayoutCell, content */
+

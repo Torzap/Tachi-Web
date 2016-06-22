@@ -1,0 +1,29 @@
+## Definir pagina principal
+DirectoryIndex index.php
+
+## Evitar ver listado de archivos
+Options All -Indexes
+IndexIgnore *
+
+## Seguridad extra para PHP
+php_flag safe_mode on
+php_flag expose_php off
+php_flag display_errors on
+
+## Manejo de errores de Apache
+ErrorDocument 403 /index.php?modulo=error403
+ErrorDocument 404 /index.php?modulo=error404
+RewriteEngine On
+Options +FollowSymLinks
+
+## Protegerse contra los ataques DOS
+LimitRequestBody 10240000
+
+## Renombrar archivos
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^salir.php$ tp-content/modulos/salir.php
+RewriteRule ^editnoticia.php$ tp-content/modulos/news/editnoticia.php
+RewriteRule ^editar.php$ tp-content/modulos/news/editar.php
+RewriteRule ^borrar.php$ tp-content/modulos/news/borrar.php
+</IfModule>

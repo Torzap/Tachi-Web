@@ -1,0 +1,50 @@
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[TantraBackup00]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[TantraBackup00]
+GO
+
+CREATE TABLE [dbo].[TantraBackup00] (
+	[idx] [int] IDENTITY (1, 1) NOT NULL ,
+	[UserID] [varchar] (20) COLLATE Korean_Wansung_CI_AS NOT NULL ,
+	[CharacterName] [varchar] (20) COLLATE Korean_Wansung_CI_AS NOT NULL ,
+	[CharacterLevel] [smallint] NOT NULL ,
+	[BrahmanPoint] [int] NOT NULL ,
+	[Tribe] [smallint] NOT NULL ,
+	[Trimurity] [smallint] NOT NULL ,
+	[GuildName] [varchar] (20) COLLATE Korean_Wansung_CI_AS NULL ,
+	[GuildID] [int] NOT NULL ,
+	[GuildRank] [smallint] NOT NULL ,
+	[curtime] [datetime] NOT NULL ,
+	[Name1] [varchar] (20) COLLATE Korean_Wansung_CI_AS NULL ,
+	[Name2] [varchar] (20) COLLATE Korean_Wansung_CI_AS NULL ,
+	[Name3] [varchar] (20) COLLATE Korean_Wansung_CI_AS NULL ,
+	[Level1] [smallint] NOT NULL ,
+	[Level2] [smallint] NOT NULL ,
+	[Level3] [smallint] NOT NULL ,
+	[TotalMoney] [float] NOT NULL ,
+	[Blocked] [tinyint] NOT NULL ,
+	[Account] [binary] (7124) NULL 
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[TantraBackup00] WITH NOCHECK ADD 
+	CONSTRAINT [PK_TantraBackup00_second] PRIMARY KEY  CLUSTERED 
+	(
+		[idx]
+	)  ON [PRIMARY] 
+GO
+
+ALTER TABLE [dbo].[TantraBackup00] ADD 
+	CONSTRAINT [DF_TantraBackup00_GuildID_1] DEFAULT (0) FOR [GuildID],
+	CONSTRAINT [DF_TantraBackup00_GuildRank_1] DEFAULT (0) FOR [GuildRank],
+	CONSTRAINT [DF_TantraBackup00_Blocked_1] DEFAULT (0) FOR [Blocked]
+GO
+
+ CREATE  INDEX [IX_TantraBackup00] ON [dbo].[TantraBackup00]([UserID]) ON [PRIMARY]
+GO
+
+ CREATE  INDEX [IX_TantraBackup00_1] ON [dbo].[TantraBackup00]([GuildName]) ON [PRIMARY]
+GO
+
+ CREATE  INDEX [IX_TantraBackup00_2] ON [dbo].[TantraBackup00]([GuildID]) ON [PRIMARY]
+GO
+

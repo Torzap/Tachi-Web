@@ -1,0 +1,263 @@
+/*
+    CSS Version: 1.0.2
+    Autor: Amir Torrez
+    amirtorrez@openmailbox.org
+
+*/
+
+* {
+outline: none;
+}
+ 
+a {
+color: #00A5F0;
+text-decoration: none;
+-webkit-transition: color .2s linear;
+-moz-transition: color .2s linear;
+text-decoration: none;
+}
+ 
+a:hover {
+color: #24BBFF;
+text-decoration: none;
+}
+ 
+::selection {
+background: #E92C6C;
+color: white;
+text-shadow: 0 1px rgba(0, 0, 0, .2);
+}
+ 
+::-moz-selection {
+background: #E92C6C;
+color: white;
+text-shadow: 0 1px rgba(0, 0, 0, .2);
+}
+ 
+::-o-selection {
+background: #E92C6C;
+color: white;
+text-shadow: 0 1px rgba(0, 0, 0, .2);
+}
+ 
+body#login-page {
+min-width: 600px;
+}
+ 
+body {
+background-color: #DDD;
+color: #222;
+font: 12px "Helvetica Neue",Helvetica,Arial,sans-serif;
+min-width: 100%;
+}
+/* Menu */
+
+nav ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #000 url('../imagenes/menu_bg.gif') repeat-x top left;
+	border-bottom: 2px solid #000;
+	border-top: 1px solid #000000;
+}
+
+html>body nav ul {
+	float: left;
+}
+
+nav li {
+	font-size: 11px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a {
+	float: left;
+	padding: 8px 13px 8px 13px;
+	text-decoration: none;
+	color: #fff;
+	background: #000 url('../imagenes/menu_bg.gif') repeat-x top left;
+	border: 1px solid #000;
+	border-top: none;
+	border-left: 0;
+	text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+	background: #29292a;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a.active {
+	font-weight: bold;
+	color: #fff;
+	background: #000 url('../imagenes/menu_bg.gif') repeat-x top left;
+	text-decoration: none;
+}
+
+#page {
+	clear: left;
+	padding-top: 1px;
+}
+#container {
+	background: #35566a url('../imagenes/page_bg.jpg') repeat-x;
+}
+h1 {
+	text-shadow: 2px 4px 2px #424242;
+	color: #eee;
+}
+
+#logo {
+	background: url('../imagenes/logo.png') no-repeat;
+	height: 102px;
+	margin: 0 0 2px 0;
+	padding: 3px;
+}
+
+#welcome {
+	position: absolute;
+	right: 55px;
+	top: 0px;
+	color: #eee;
+	height: 10px;
+	padding: 5px 12px 10px 12px;
+	background: #5c8aa4;
+	font-size: 96%;
+}
+
+#welcome .logout {
+	margin-left: 4px;
+	padding: 0 18px 2px 0;
+	color:#eee;
+	background: url('../imagenes/logout.png') no-repeat right;
+}
+/* Left Menu */
+
+#page {
+    padding: 0;
+	margin: 0;
+	background: #85B1EE url('../imagenes/page_bg.gif') repeat-x;
+	background: #fff;
+}
+
+#left_menu {
+	float: left;
+	width: 200px;
+	color: #000;
+	padding: 0px 0;
+	margin: 0 0 6px 0;
+	font-size: 96%;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#left_menu div.left_menu_box {
+	background: #fff;
+	margin: 0;
+}
+
+#left_menu div.left_menu_box div.title {
+	font-weight: bold;
+	border-bottom: 1px solid #c9c9c9;
+	padding: 8px 8px;
+	background: #5a5a5a;
+	background: url('../imagenes/left_menu_title_bg.gif');
+	color: #000;
+	border-top: 1px solid #c9c9c9;
+}
+
+#left_menu div.left_menu_box ul.menu {
+	padding: 0;
+	margin: 0;
+}
+
+#left_menu div.left_menu_box ul.menu li a {
+	display: block;
+	padding: 8px 15px;
+	background: #F2F8FF;
+	color: #0c4566;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+#left_menu div.left_menu_box ul.menu li.active a {
+	font-weight: bold;
+	color: #000;
+	background: #e7e7e7;
+}
+
+#left_menu div.left_menu_box ul.menu li a:hover {
+	color: #000;
+	background-color: #e7e7e7;
+	text-decoration: none;
+}
+/* Fix IE. Hide from IE Mac \*/
+* html #left_menu li a, * html #left_menu li { 
+	height: 1%;
+}
+/* End */
+/* Page Footer */
+footer {
+	border-top: 1px solid #7d99a9;
+	padding: 0 15px 0 15px;
+	clear: both;
+	color: #fff;
+}
+
+footer p {
+	padding:5px;
+	margin: 0;
+	font-size: 11px;
+}
+
+footer .generation {
+	float: right;
+}
+
+footer a:link, footer a:active, footer a:hover, footer a:visited {
+    color: #fff;     
+	text-decoration: none;
+}
+/* End */
+.border_wrapper div.title {
+    margin: 0;
+	font-weight: bold;
+	font-size: 14px;
+	border-bottom: 1px solid #c9c9c9;
+	padding: 8px 8px;
+	background: #0b4566 url('../imagenes/table_title.gif') repeat-x;
+	color: #fff;
+}
+
+.border_wrapper div.title a {
+	color: #fff;
+	text-decoration: none;
+}
+#correct {
+background: #D6ECA6;
+border: 2px dashed #8DC93E;
+padding: 10px 50px 10px 10px;
+font-size: 13px;
+text-align: center;
+font-weight: bold;
+text-shadow: 0 1px 0 #ccc;
+}
+#error {
+background: #FFF6BF;
+border: 2px dashed #FFD324;
+padding: 10px 50px 10px 10px;
+font-size: 13px;
+text-align: center;
+font-weight: bold;
+text-shadow: 0 1px 0 #ccc;
+}
+#volver {
+padding: 10px 50px 10px 10px;
+font-size: 14px;
+font-weight: bold;
+text-shadow: 0 1px 0 #ccc;
+text-align: center;
+}

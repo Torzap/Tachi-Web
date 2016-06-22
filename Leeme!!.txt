@@ -1,0 +1,73 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| #           Tachi web 1.2.3 - Tachi Admin Panel 1.0.4              # ||
+|| # ---------------------------------------------------------------- # ||
+|| #               Copyright ©2011-2016 Amir Torrez                   # ||
+|| #                 Todos los derechos reservados                    # ||
+|| # ----------------      Instrucciones de uso      ---------------- # ||
+|| #  http://torzap.com.mx          -          johnamtorres@gmail.com # ||
+|| #################################################################### ||
+\*======================================================================*/
+
+
+PASO 1:
+     Una vez listo el xampp, procederemos a instalar el panel, para ello lo
+     abrimos por localhost. (http://localhost/tp-admin/setup), Y damos clic 
+     en instalación nueva, y eso es todo!!.
+
+	NOTA: Si no usas xampp, debes editar el archivo conec.php ubicado en
+	la carpeta "tw-config", en htdocs.
+
+	Si usas xampp, no toques ese archivo.
+
+
+PASO 2:
+     Nos vamos a la carpeta "tw-config" y abrimos el archivo "config.php"
+     En el cual nos pedira unos datos para la conexión del SQL y otros
+     datos extra. Introducimos los datos que nos pide y guardamos el archivo.
+
+
+PASO 3:
+     Para poder acceder a las funciones del Admin Panel, debemos tener
+     instaladas las Bases de datos en el SQL Server, abrimos el SQL
+     Server, y damos clic derecho en la BD "UserLogin" y luego en nueva
+     consulta, e introducimos las instrucciones para la nueva tabla
+     que John debio habernos dado ;).
+
+     Una vez generada la consulta, nos ubicamos nuevamente en la BD 
+     "UserLogin", le damos clic derecho y luego en "actualizar".
+
+
+PASO 4:
+     Ya de aqui, abrimos la tabla "AdminAccount", allí introduciremos
+     los datos para crear a los usuarios con los cual acceder al Admin Panel.
+     Recuerda rellenar todos los datos y que la contraseña debes introducirla
+     en MD5, para acceder la escribes normalmente, pero en el SQL debe ir
+     obligatoriamente en MD5.
+
+
+PASO 5:
+     Ya aquí tenemos todo hecho, ya solo nos toca visitar el Admin Panel
+     para editar las funciones de la web.
+
+/*======================================================================*\
+|| #################################################################### ||
+|| #           Tachi web 1.2.3 - Tachi Admin Panel 1.0.4              # ||
+|| # ---------------------------------------------------------------- # ||
+|| #                                                                  # ||
+|| #  Eso es todo, recuerda que si necesitas asistencia y/o soporte   # ||
+|| #  sobre Tachi Weby/o Tachi Admin Panel, debes consultar los       # ||
+|| #  datos que recibiste al comprar esta web.                        # ||
+|| #                                                                  # ||
+|| #  No olvides que John Am Torres, no solo diseña y desarrolla      # ||
+|| #  webs para tantra, podés contratadlo para cualquier proyecto     # ||
+|| #  que tengaís.                                                    # ||
+|| #                                                                  # ||
+|| # ---------------------------------------------------------------- # ||
+|| #  http://tachihost.in          -           johnamtorres@gmail.com # ||
+|| #################################################################### ||
+\*======================================================================*/
+
+
+	
+				¡¡ Mash it up !!

@@ -1,0 +1,345 @@
+/*
+
+Web Code and Design by: Elianmp
+Fecha: 22/02/2011 11:37 p.m.
+
+Colores Primarios:
+
+Class: . (Multiples veces)
+id: #	(Una vez)
+
+*/
+@charset "utf-8";
+
+html {
+}
+
+body {
+background: #000000 url('../images/background.jpg');
+background-position: top center;
+background-repeat: no-repeat;
+font-size: 11px;
+color: #4e4e4e;
+font-family: Verdana, sans-serif;
+line-height: 1.3em;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+table, tr, td, ul, li, fieldset, img, body, html {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+img {
+border: none;
+}
+
+A:link {text-decoration: none; color: #4e4e4e;}
+A:visited {text-decoration: none; color: #4e4e4e;}
+A:active {text-decoration: none; color: #4e4e4e;}
+A:hover {text-decoration: none; color: #4e4e4e;}
+
+a img {
+border: none;
+}
+
+*:focus {
+outline: none;
+}
+
+/* Configuración principal */
+
+#center {
+width: 895px;
+display: inline;
+}
+
+#top {
+margin-top: 72px;
+margin-left: -34em;
+}
+
+#menu {
+margin-left: 5px;
+
+}
+
+#center1 {
+height: 266px;
+background: url("../images/Center1.png");
+background-position: top center;
+background-repeat: no-repeat;
+margin-left: 7px;
+padding-top: 21px;
+padding-left: 3px;
+padding-bottom: 17px;
+}
+
+#center2 {
+min-height: 100px;
+background: url("../images/Center2.png");
+background-position: top center;
+background-repeat: repeat-y;
+margin-left: 7px;
+
+padding-left: 3px;
+}
+
+#center3 {
+min-height: 44px;
+background: url("../images/Center3.png");
+background-position: top center;
+background-repeat: no-repeat;
+margin-left: 7px;
+padding-top: 21px;
+padding-left: 3px;
+}
+
+#login {
+vertical-align: top;
+width: 271px;
+height: 155px;
+background: url("../images/LoginBg.png");
+background-repeat: no-repeat;
+padding-right: 16px;
+}
+
+#loginon {
+vertical-align: top;
+width: 271px;
+height: 266px;
+background: url("../images/LoginBgGrande.png");
+background-repeat: no-repeat;
+padding-right: 16px;
+}
+
+#events {
+vertical-align: top;
+height: 185px;
+width: 271px;
+background: url("../images/EventsBG.png");
+background-repeat: no-repeat;
+padding-right: 16px;
+}
+
+
+#logcont {
+margin-left: 5px;
+}
+
+#logcont input[type=text] {
+background: url('../images/LoginInput.png') no-repeat; 
+border: 0; 
+width: 163px; 
+height: 24px;  
+font-size: 11px;
+color: #a4a4a4; 
+padding-left: 10pt;
+line-height: 1.8em; 
+font-family: Verdana;
+font-weight:bolder; 
+}
+
+#logcont input[type=password] {
+background: url('../images/LoginInput.png') no-repeat; 
+border: 0; 
+width: 163px; 
+height: 24px;  
+font-size: 11px;
+color: #a4a4a4; 
+padding-left: 10pt;
+line-height: 1.8em; 
+font-family: Verdana;
+font-weight:bolder; 
+}
+
+#content {
+height: 266px;
+width: 568px;
+background: url("../images/NewsBg.png");
+background-repeat: no-repeat;
+vertical-align: top;
+}
+
+#RegTable {
+height: 820px;
+width: 858px;
+background: url("../images/RegisterBg.png");
+background-repeat: no-repeat;
+}
+
+.notice {
+width: 527px;
+height: 23px;
+margin-left: 10px;
+padding-left: 10px; 
+padding-top: 4px;
+margin-bottom: 2px;
+background: url("../images/NewsBar.png");
+background-repeat: no-repeat;
+}
+
+.notice1 {
+float: left;
+color: #bbbbbb;
+}
+
+.notice1 A:Visited {
+color: #bbbbbb;
+}
+
+.notice2 {
+float: right;
+padding-right: 20px;
+color: #bbbbbb;
+}
+
+.TNot {
+color: #3e7dad;
+}
+
+.TEve {
+color: #ffbc3d;
+}
+
+.margin {
+padding: 10px;
+vertical-align: top;
+text-align: left;
+height: 100%;
+}
+
+#footer{
+height: 91px;
+min-width: 1024px;
+background: url("../images/FooterBg.png");
+background-repeat: repeat-x;
+}
+
+#footal{
+width: 845px;
+text-align: left;
+color: #808080;
+font-size: 7.5pt;
+}
+
+#footal a{
+margin-right: 10px;
+margin-left: 10px;
+}
+
+#foot1 a{
+color: #808080;
+}
+
+#foot1 a:visited{
+color: #808080;
+}
+
+#foot2 {
+margin-left: 10px;
+margin-top: 5px;
+color: #bcbcbc;
+}
+
+#foot3 {
+}
+
+#ftable {
+height: 91px;
+width: 100%;
+}
+
+#sepA1 {
+padding-right: 7px;
+color: #bcbcbc;
+}
+
+#formdv {
+height: 52px;
+}
+
+#namesp {
+height: 4px;
+}
+
+#divr1 {
+float: left;
+padding-left: 10px;
+}
+
+#divr2 {
+float: right;
+padding-right: 20px;
+}
+
+#spam {
+background: url("../images/PublicidadTest.jpg") no-repeat;
+width: 858px;
+height: 266px;
+}
+
+.join_form input {
+width:164px; height:16px; margin-bottom:8px; border:1px solid #d9d9d9; 
+}
+
+#pubtaneys {
+background: url("../images/PubTaneys.png") no-repeat;
+width: 271px;
+height: 219px;
+text-align: left;
+}
+
+#pubtaneys #pubtaneysbut {
+padding-top: 168px;
+padding-left: 7px;
+}
+
+#links {
+text-align: left;
+background: url("../images/BGLinks.png") no-repeat;
+width: 271px;
+height: 194px;
+padding-top: 13px;
+padding-left: 10px;
+}
+
+
+
+#registerform {
+text-align: left;
+padding-left: 140px;
+padding-right: 15px;
+padding-bottom: 15px;
+width: 600px;
+}
+
+
+#registerform input{
+height: 13px;
+width: 150px;
+}
+
+#registerform label{
+}
+
+#registerform #centertable .c1 { width:170px; }
+#registerform #centertable .c2 { width:590px; }
+#registerform #centertable th { border:1px solid #0B0B0B;padding:0 0 0 12px;background:#070707;vertical-align:middle;text-align:left;color:#444444;}
+#registerform #centertable th span { padding-left:8px;} 
+#registerform #centertable td { border:1px solid #0B0B0B;padding:8px 8px 8px 14px;font-size:11px;color:#8f8f8f; }
+#registerform #centertable select { font-size:11px; }
+#registerform #centertable input.textbox { width:153px;vertical-align:middle; }
+
+#newcont A{
+text-decoration: underline;
+color: #7D7D7D;
+}
+
+#newcont1 A{
+text-decoration: none;
+color: #7D7D7D;
+}

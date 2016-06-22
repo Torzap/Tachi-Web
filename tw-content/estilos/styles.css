@@ -1,0 +1,302 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* John Am Torres - johnamtorres@gmail.com */ 
+
+a:link {
+	color: #FFF;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #600;
+}
+
+a:visited {
+	color: #600;
+}
+
+*
+{
+border: 0;
+margin: 0;
+}
+
+body { 
+	font-family: Tahoma; font-size: 12px;
+	color: #a9a7a7;
+	background-color: #000000;
+} 
+
+
+#main1
+{
+width: 80%;
+background: url(images/sitebg.jpg) no-repeat bottom left fixed;
+padding-left: 150px;
+}
+
+#main
+{
+width: 770px;
+padding-bottom: 20px;
+}
+
+#logo{
+padding-left: 20px;
+text-align: left;
+height: 55px;
+padding-top: 7px;
+margin-bottom: 15px;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+#logo H2 a
+{
+font-size: 10px;
+}
+
+#buttons
+{
+width: 750px;
+height: 45px;
+background: url(images/menu.png) no-repeat top left;
+margin-bottom: 20px;
+padding-left: 20px;
+}
+
+#buttons ul {
+    padding-left: 10px;
+    margin: 0px;      
+}
+
+#buttons li {
+	display: inline;		
+}
+
+#buttons a {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 13px;
+	margin-right: 5px;
+}
+
+#buttons a:hover {
+	width: 80px;
+    height: 39px;
+	color: #ffffff;
+}
+
+#contop{
+	background:url(images/contop.png) no-repeat center;
+	height: 7px;
+	width: 900px;
+}
+
+#conbot{
+	background:url(images/conbot.png) no-repeat center;
+	height: 7px;
+	width: 900px;
+}
+
+#content
+{
+width: 900px;
+background:url(images/conbg.png) ;
+}
+
+#left
+{
+width: 498px;
+margin-left: 7px;
+}
+
+#left p {
+	padding: 10px;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: Red;
+}
+
+#left H1
+{
+	height: 26px;
+	padding: 1px 0 0 40px;
+	background: url(images/title_left.png) no-repeat;
+	font-size: 16px;
+	color: YellowGreen;
+}
+
+#left a
+{
+ color: #3a7854;
+}
+
+#left a:hover{
+	text-decoration: none;
+	color: #353535;
+}
+
+#left a:visited {
+	color: #600;
+}
+
+#left table {
+	background:url(images/conbg2.png) ;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #a9a7a7;
+}
+
+input { 
+	font-family: Tahoma, Verdana, Arial; font-size: 11px;
+	color: #a9a7a7;
+	background-color:transparent;
+	border: #a9a7a7;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px
+}
+select {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px; color: #a9a7a7;
+	background-color:transparent;
+	border: #a9a7a7;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px
+}
+#asunto:hover{
+	background:transparent;
+	border: 1px ridge #418eb6; 
+
+}
+#selected{
+	background:#151C2A;
+	border: 1px ridge #a9a7a7; 
+	border-radius: 4px;
+
+}
+
+#right
+{
+width: 255px;
+float:right;
+margin-left: 7px;
+margin-right: 7px;
+}
+
+#right p {
+	padding: 10px;
+	color: #FFF;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+}
+
+#right ul 
+{
+	list-style: none;
+	padding-top: 20px;
+	padding-left: 13px;
+	margin: 0px;
+	display:block;
+}
+
+#right ul li{
+	margin-bottom: 10px;
+	padding-bottom: 9px;
+	background: url(images/liststyle.png) no-repeat left top;
+	padding-left: 18px;
+	padding-right: 20px;
+}
+
+#archives ul li {
+	margin-bottom: 1px;
+	background: url(images/liststyle.png) no-repeat left;
+	padding-left: 15px;
+	padding-top: 7px;
+}
+
+#right h2 {
+	height: 26px;
+	margin-left: 4px;
+	padding: 0px 0 0 40px;
+	background: url(images/title_right.png) no-repeat;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+#right a:link {
+	text-decoration: none;
+}
+
+#right a:hover {
+	text-decoration: underline;
+}
+#right a:visited {
+	text-decoration: none;
+	color: #600;
+}
+
+#right li a {
+	padding-left: 10px;
+	background: url(images/img09.gif) no-repeat 1px 5px;
+}
+
+#right table {
+	border-style: dashed;
+	border-width: 2px;
+	border-color: #ffffff;
+	background:url(images/conbg2.png) ;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 8pt;
+	color: #ffffff;
+}
+
+#footer
+{
+	font-size: 10px;
+	color: #000000;
+	padding-top: 4px;
+	text-align: center;
+	clear:both;
+	padding-bottom: 10px;
+}
+
+#mainbot{
+	background:url(images/mainbot.png) bottom left;
+	height: 71px;
+}
+
+#footer a
+{
+	color: #600;
+	font-size: 10px;
+	text-decoration: none;
+}
+.padding
+{
+padding: 10px;
+color:#fed600;
+font-weight: bold;
+}

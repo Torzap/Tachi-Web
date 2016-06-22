@@ -1,0 +1,9 @@
+DirectoryIndex noticia.php
+
+Options All -Indexes
+IndexIgnore *
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^noticia.html$ noticia.php
+</IfModule>
