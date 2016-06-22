@@ -1,1 +1,0 @@
-$(document).ready(function(){$('head').append('<script type="text\/javascript" src="\/src\/skin\/Default\/main.php"><\/script>');});
