@@ -2,7 +2,7 @@
  || #################################################################### ||
  || #                         Tachi Web 2.0.0                          # ||
  || # ---------------------------------------------------------------- # ||
- || #                 Copyright ©2011-2016 Amir Torrez                 # ||
+ || #                 Copyright Â©2011-2016 Amir Torrez                 # ||
  || #                   Todos los derechos reservados                  # ||
  || # ----------------            CREDITS             ---------------- # ||
  || # amirtorrez@openmailbox.org                      torzap.github.io # ||
@@ -14,3 +14,6 @@
 	- Amir Torrez -> Author
 	
  Colaborators:
+ 
+	- Radiantecf -> Allowed use permissions of /lib/tad.php file 
+	-
