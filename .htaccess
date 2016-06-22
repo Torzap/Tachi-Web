@@ -1,0 +1,43 @@
+####################################################################
+##                                                                ##
+##      HTACCESS by Amir Torrez - amirtorrez@openmailbox.org      ##
+##                                                                ##
+####################################################################
+
+## Archivo index
+#DirectoryIndex default.php
+
+## Errores Apache
+ErrorDocument 400 "<title>Error 400</title><h2>El pedido es incorrecto.</h2>"
+ErrorDocument 401 "<title>Error 401</title><h2>Necesita autorizaci&oacute;n para esta &aacute;rea.</h2>"
+ErrorDocument 403 "<title>Error 403</title><h2>Acceso a esta &aacute;rea denegado.</h2>"
+ErrorDocument 404 "<title>Error 404</title><h2>&Aacute;rea solicitada no existe en el servidor.</h2>"
+ErrorDocument 500 "<title>Error 500</title><h2>Ha ocurrido un error interno en el servidor.</h2>"
+
+## No listar directorios
+IndexIgnore *
+Options -Indexes
+
+## Acelerar carga
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/x-javascript
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4.0[678] no-gzip
+BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+
+## DOS Protect
+LimitRequestBody 1024000
+
+## Seguridad para PHP
+php_flag safe_mode on
+php_flag expose_php off
+
+## Zona horaria
+php_value date.timezone America/Mexico_City
+
+## Permitiendo manifiestos
+AddType application/x-web-app-manifest+json .webapp
+AddType application/x-web-app-manifest+json .json
+AddType application/x-web-app-manifest+json .manifest
+
+## Restringir IP
+#deny from 192.168.0.1

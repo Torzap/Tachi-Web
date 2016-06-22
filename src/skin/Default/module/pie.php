@@ -1,0 +1,2 @@
+<div class="left">Copyright &copy;<?php echo(date("Y"));?> Torzap - Todos los derechos reservados</div>
+<div class="right">Dise&ntilde;o y desarrollo por <a href="http://torzap.github.io">Amir Torrez</a></div>
