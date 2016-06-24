@@ -36,13 +36,13 @@
 	2. Abre el HTLauncher.exe con un editor hexadecimal, yo uso y recomiendo pspad, y busca http:// (ctrl + F):
                
 			  ID
-			14ED50 - http://xxx.xxx.xxx.xxx/s_gamelogin/login.php?user_id=%s&user_pass=%s
-			14EDAQ - http://xxx.xxx.xxx.xxx/s_gamelogin/login.php?user_id=%s&user_pass=%s
+			14ED50 - http://xxx.xxx.xxx.xxx/etc/gamelogin/login.php?user_id=%s&user_pass=%s
+			14EDAQ - http://xxx.xxx.xxx.xxx/etc/gamelogin/login.php?user_id=%s&user_pass=%s
 
 			Debes reemplazar "xxx.xxx.xxx.xxx" por tu ip, al igual que en el HTMessage.xml, quedaría así:
 
-			14ED50 - http://5.42.113.96/s_gamelogin/login.php?user_id=%s&user_pass=%s
-			14EDAQ - http://5.42.113.96/s_gamelogin/login.php?user_id=%s&user_pass=%s
+			14ED50 - http://5.42.113.96/etc/gamelogin/login.php?user_id=%s&user_pass=%s
+			14EDAQ - http://5.42.113.96/etc/gamelogin/login.php?user_id=%s&user_pass=%s
 
 		OJO: Son solo estas 2 líneas.
 
