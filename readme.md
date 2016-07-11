@@ -1,6 +1,7 @@
-This is a old and obsolete base of the Tantra Online Web System by Amir Torrez
+Esta es una vieja y obsoleta base del sistema web de Tantra Online de Amir Torrez
 
-This version system is distributed under a license: *CC BY-NC-SA 4.0* (for more info read [licencia](https://github.com/Torzap/TachiWeb/blob/old_1.2.3/licencia) file)
+Esta versión del sistema es distribuida bajo la licencia: *CC BY-NC-SA 4.0* (para más información lee el archivo [licencia](https://github.com/Torzap/TachiWeb/blob/old_1.2.3/licencia))
 
-To see the latest version of the system go to:
-https://github.com/Torzap/TachiWeb
+Versiones:
+- Master (2.0.0) => https://github.com/Torzap/TachiWeb/tree/master
+- 1.2.3 => https://github.com/Torzap/TachiWeb/tree/old_1.2.3
