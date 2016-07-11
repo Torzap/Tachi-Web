@@ -3,18 +3,18 @@
 || #################################################################### ||
 || #                         Tachi Web 2.0.0                          # ||
 || # ---------------------------------------------------------------- # ||
-|| #                 Copyright ©2011-2016 Amir Torrez                 # ||
+|| #                 Copyright Â©2011-2016 Amir Torrez                 # ||
 || #                   Todos los derechos reservados                  # ||
 || # ----------------        Configuraciones         ---------------- # ||
 || # amirtorrez@openmailbox.org                      torzap.github.io # ||
 || #################################################################### ||
 \*======================================================================*/
 
-/* Conexión SQL */
+/* ConexiÃ³n SQL */
 $db['HOST'] = 'Torzap\\SQLEXPRESS'; // Servidor del SQL
 $db['USER'] = 'sa'; // Usuario del SQL
-$db['PASS'] = '123'; // Contraseña del SQL
-$db['TYPE'] = 'mssql'; // Tipo de motor de base de datos, MySQL ó MsSQL
+$db['PASS'] = '123'; // ContraseÃ±a del SQL
+$db['TYPE'] = 'mssql'; // Tipo de motor de base de datos, MySQL Ã³ MsSQL
 
 /* Bases de datos */
 $db['TRZP'] = 'TorzapWeb'; // Nombre de la base de datos del Admin Panel
@@ -29,9 +29,9 @@ $wb['RESET_Y'] = 193; // Coordenada en Y de la ubicacion
 
 /* Servidor */
 $sv['NAME'] = 'Tantra Test'; // Nombre del servidor
-$sv['SVIP'] = '25.2.164.164'; // Dirección IP del servidor
+$sv['SVIP'] = '25.2.164.164'; // DirecciÃ³n IP del servidor
 $sv['AMOUNT'] = 1; // Cantidad de servidores
-$sv['MANTTO'] = 0; // 0 Si el servidor está abierto o 1 si está cerrado o mantenimiento
+$sv['MANTTO'] = 0; // 0 Si el servidor estÃ¡ abierto o 1 si estÃ¡ cerrado o mantenimiento
 $sv['ACC_DIR'] = 'E:\\John\\Tantra Online\\Server'; // Ruta de la carpeta del servidor
 
 /* Gamelogin */
@@ -58,4 +58,10 @@ $sv['EXP'] = 'x10'; // Rate de experiencia
 $sv['GOLD'] = 'x1'; // Rate de oro/rupiahs
 $sv['MP'] = 'x1'; // Rate de pundos dios/master points
 
+$wb['MAILUser'] = 'torzap1@gmail.com'; // Correo
+$wb['MAILPass'] = '123'; // ContraseÃ±a
+$wb['MAILName'] = $sv['NAME']; // Nombre remitente
+$wb['MAILType'] = 'smtp'; // Tipo
+$wb['MAILHost'] = 'ssl://smtp.gmail.com'; // Host de correos
+$wb['MAILPort'] = '465'; // Puerto del host
 ?>
