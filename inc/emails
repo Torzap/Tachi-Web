@@ -1,0 +1,29 @@
+<?php
+	require('lib/class.phpmailer.php');
+	require('lib/class.smtp.php');
+	$mail = new PHPMailer ();
+
+	$mail -> From = "$SMTPUser";
+	$mail -> FromName = "$SMTPName";
+	$mail -> AddAddress ("$Email");
+	$mail -> Subject = "$asunto"; 
+	$mail -> Body = '' .$Body. '';
+	$mail -> IsHTML (true);
+	
+	$mail->IsSMTP();
+	$mail->Host = 'ssl://smtp.gmail.com';
+	$mail->Port = 465;
+
+	$mail->SMTPAuth = true;
+
+	$mail->Username = "$SMTPUser"; 
+	$mail->Password = "$SMTPPass";
+	
+	#$mail->Send();
+
+	if(!$mail->Send()){
+		echo($errno);
+	} else {
+		echo($sucess);
+	};
+?>
