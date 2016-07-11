@@ -12,7 +12,7 @@ color 1F
 @echo.
 echo    ===========================================================================
 echo    ==                                                                       ==
-echo    ==               Reinicio de apache automatico contra DDOS               ==
+echo    ==                     Reinicio de apache automatico                     ==
 echo    ==                                                                       ==
 echo    ===========================================================================
 echo    ==                         Creado por Amir Torrez                        ==
